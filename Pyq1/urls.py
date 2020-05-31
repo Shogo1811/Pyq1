@@ -1,7 +1,7 @@
 from django.contrib import admin
-from django.urls import path, include # includeを追加
+from django.urls import include, path
 
 urlpatterns = [
-    path('garden/', include('garden.urls')),
     path('admin/', admin.site.urls),
+    path('', include('garden.urls')),
 ]
